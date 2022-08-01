@@ -1,0 +1,307 @@
+body {
+  background-color: #F6F2E9;
+}
+
+@media (max-width: 375px) {
+  #eventsBar {
+    display: none;
+  }
+}
+
+@media (max-width: 375px) {
+  #suggestions {
+  }
+}
+
+@media (max-width: 375px) {
+  #resourceBar {
+    display: none;
+  }
+}
+
+@media (max-width: 375px) {
+  #exploreBar {
+    display: none;
+  }
+}
+
+@media (max-width: 375px) {
+  #suggestionImg {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+@media (max-width: 375px) {
+  #leftSidebar {
+    width: 280px;
+    margin-left: 47px;
+  }
+}
+
+@media (max-width: 375px) {
+  #newPostPfp {
+    width: 37px;
+    height: 37px;
+  }
+}
+
+@media (max-width: 375px) {
+  #imgPostNew {
+    width: 37px;
+    height: 37px;
+  }
+}
+
+@media (max-width: 375px) {
+  #centerPosts {
+    height: 131px;
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 375px) {
+  #rightSidebar {
+    display: none;
+  }
+}
+
+@media (max-width: 375px) {
+  #sectionBox {
+    display: none;
+  }
+}
+
+@media (min-width: 1200px) {
+  #leftSidebar {
+    margin-left: 0px;
+    width: 280px;
+    height: 640px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .sectionBox {
+    margin-top: 5px;
+  }
+}
+
+@media (min-width: 1200px) {
+  #centerPosts {
+    margin-left: 281px;
+    margin-top: -802px;
+    background-color: white;
+  }
+}
+
+@media (min-width: 1200px) {
+  strong {
+    color: black;
+  }
+}
+
+@media (min-width: 1200px) {
+  .rightText {
+    margin-left: 20px;
+  }
+}
+
+@media (min-width: 1200px) {
+  #suggestions {
+    font-size: 20px;
+    margin-left: 60px;
+  }
+}
+
+@media (min-width: 1200px) {
+  img .leftImgIcon {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+@media (min-width: 1200px) {
+  #exploreBar-1 {
+    margin-top: 23px;
+  }
+}
+
+@media (min-width: 1200px) {
+  #rightSidebar {
+    margin-left: 920px;
+    margin-top: -200px;
+    width: 330px;
+  }
+}
+
+@media (min-width: 1200px) {
+  #centerPosts {
+    width: 620px;
+  }
+}
+
+@media (min-width: 1200px) {
+  #suggestionImg {
+    width: 64px;
+    height: 64px;
+  }
+}
+
+@media (min-width: 1300px) {
+  #newPostPfp {
+    margin-top: 5px;
+    width: 35px;
+    height: 35px;
+  }
+}
+
+@media (min-width: 1300px) {
+  #postText {
+    width: 375px;
+    margin-top: 40px;
+  }
+}
+
+@media (min-width: 1300px) {
+  #aboutPosts {
+    height: 92px;
+    width: 275px;
+    margin-left: 203px;
+  }
+}
+
+@media (min-width: 1300px) {
+  #namePic {
+    margin-top: 60px;
+  }
+}
+
+@media (min-width: 1300px) {
+  #newPostInput {
+    width: 400px;
+  }
+}
+
+@media (min-width: 1300px) {
+  #rightSidebar {
+    margin-top: -157px;
+  }
+}
+
+@media (min-width: 1300px) {
+  #centerPosts {
+    height: 324px;
+  }
+}
+
+@media (min-width: 1300px) {
+  #imgPostNew {
+    width: 40px;
+    height: 40px;
+    margin-left: -80px;
+  }
+}
+
+@media (min-width: 1400px) {
+  #rightSidebar {
+    margin-left: 1100px;
+    margin-top: -600px;
+  }
+}
+
+@media (min-width: 1400px) {
+  #centerPosts {
+    width: 760px;
+    margin-top: -630px;
+    height:200px;
+  }
+}
+
+@media (min-width: 1400px) {
+  #newPostInput {
+    width: 490px;
+  }
+}
+
+@media (min-width: 1600px) {
+  #rightSidebar {
+    margin-left: 1200px;
+    margin-top: -320px;
+  }
+}
+
+@media (min-width: 1600px) {
+  #newPostInput {
+    width: 550px;
+  }
+}
+
+@media (min-width: 1600px) {
+  #centerPosts {
+    margin-left: 300px;
+  }
+}
+
+@media (min-width: 1600px) {
+  #centerPosts {
+    width: 800px;
+  }
+}
+
+@media (min-width: 1900px) {
+  #rightSidebar {
+    margin-left: 1500px;
+  }
+}
+
+@media (min-width: 1900px) {
+  #newPostPfp {
+    width: 70px;
+    height: 70px;
+  }
+}
+
+@media (min-width: 1900px) {
+  #newPostInput {
+    height: 50px;
+    width: 650px;
+  }
+}
+
+@media (min-width: 1900px) {
+  #centerPosts {
+    height: 360px;
+  }
+}
+
+@media (min-width: 1900px) {
+  #suggestions {
+    font-size: 35px;
+  }
+}
+
+@media (min-width: 1900px) {
+  strong {
+    font-size: 30px;
+  }
+}
+
+@media (min-width: 1900px) {
+  #posts {
+    width: 312px;
+  }
+}
+
+@media (min-width: 1900px) {
+  .sectionBox {
+    margin-top: 30px;
+  }
+}
+
+@media (min-width: 1900px) {
+  #centerPosts {
+    width: 1000px;
+    margin-left: 374px;
+  }
+}
+

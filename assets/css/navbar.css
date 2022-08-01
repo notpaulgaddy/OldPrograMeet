@@ -1,0 +1,31 @@
+#logoNavbar {
+  width: 65px;
+  height: 65px;
+}
+
+@media (min-width: 1200px) {
+  #searchNav {
+    margin-right: 1000px;
+    width: 600px;
+  }
+}
+
+@media (min-width: 1200px) {
+  #search {
+    padding-left: 0px;
+    width: 200px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .padMar {
+    width: 296px;
+  }
+}
+
+@media (min-width: 1200px) {
+  #gearIcon {
+    margin-left: -600px;
+  }
+}
+

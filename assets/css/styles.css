@@ -1,0 +1,162 @@
+@media (min-width: 370px) {
+  .container {
+    width: 290px;
+    height: 240px;
+    border: 1px solid grey;
+  }
+}
+
+@media (min-width: 370px) {
+  #profileBanner {
+    width: 260px;
+  }
+}
+
+@media (min-width: 370px) {
+  #profilePicProfile {
+    border-radius: 50%;
+    height: 60px;
+    width: 60px;
+    margin-top: 20px;
+    margin-left: 37px;
+  }
+}
+
+@media (min-width: 370px) {
+  #usersName {
+    margin-left: 27px;
+    margin-top: 60px;
+  }
+}
+
+@media (min-width: 370px) {
+  #aboutPosts {
+    width: 150px;
+    margin-left: 70px;
+  }
+}
+
+@media (min-width: 370px) {
+  #posts {
+    margin-left: 40px;
+  }
+}
+
+@media (min-width: 414px) {
+  .eachUserPfp img {
+    width: 30px;
+    height: 30px;
+    margin-top: 40px;
+  }
+}
+
+@media (min-width: 414px) {
+  .eachPostBox {
+    margin-top: 30px;
+  }
+}
+
+@media (min-width: 414px) {
+  .username {
+    margin-right: 40px;
+    margin-left: 25px;
+  }
+}
+
+@media (min-width: 414px) {
+  .usersName {
+    margin-right: 20px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    width: 700px;
+    height: 380px;
+    border: 1px solid grey;
+  }
+}
+
+@media (min-width: 1200px) {
+  #posts {
+    padding-left: 50px;
+  }
+}
+
+@media (min-width: 1200px) {
+  #profileBanner {
+    width: 680px;
+    height: 130px;
+  }
+}
+
+@media (min-width: 1200px) {
+  #profilePicProfile {
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+    margin-top: 50px;
+    margin-left: 207px;
+  }
+}
+
+@media (min-width: 1200px) {
+  #usersName {
+    margin-left: 50px;
+    margin-top: 95px;
+  }
+}
+
+@media (min-width: 1200px) {
+  #aboutPosts {
+    width: 190px;
+    height: 50px;
+    margin-left: 250px;
+    font-size: 23px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .mb-3 {
+    width: 700px;
+  }
+}
+
+@media (min-width: 1200px) {
+  #profDetails {
+    padding-top: 200px;
+    font-size: 31px;
+    margin-left: 289px;
+    padding-top: 20px;
+  }
+}
+
+@media (min-width: 1200px) {
+  #email {
+    width: 300px;
+  }
+}
+
+@media (min-width: 1200px) {
+  #name {
+    width: 300px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .card-body {
+    display: inline;
+  }
+}
+
+@media (min-width: 1440px) {
+  .container {
+    margin-right: 400px;
+  }
+}
+
+@media (min-width: 1600px) {
+  .container {
+    margin-right: 500px;
+  }
+}

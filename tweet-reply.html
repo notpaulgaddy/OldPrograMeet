@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="keywords" content="app, landing, corporate, Creative, Html Template, Template">
+    <meta name="author" content="web-themes">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>PrograMeet</title>
+    <link href="public/img/logo.png" type="image/png" rel="icon">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link href="public/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="public/css/fontawesome.min.css" rel="stylesheet" type="text/css" />
+    <link href="public/css/helper.css" rel="stylesheet" type="text/css" />
+    <link href="public/css/style.css" rel="stylesheet" type="text/css" />
+    <link href="public/css/responsive.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" />
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <div>
+        <div class="modal fade" id="commentModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel" style="text-align: center">
+                            Replying to
+                        </h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="form-group">
+                            <!-- <label for="message-text" class="col-form-label">Post:</label> -->
+                            <textarea rows="5" class="form-control" id="postRep"></textarea>
+                        
+                                        <div style="height: 2px;display: none;" class="progress">
+                    <div id="progressbar" class="progress-bar" role="progressbar" style="width: 0%" aria-valuenow="25" aria-valuemin="0"
+                        aria-valuemax="100"></div>
+                </div>
+                <div class="mt-2" style="text-align: center;" id="preview-media">
+
+                </div>
+
+                <div class="d-flex align-items-center justify-content-center mt-3">
+                    <div data-type="image" id="attach_img" title="Attach image" style="cursor: pointer;font-size: 20px;">
+                        <i class="fa fa-image " aria-hidden="true"></i>
+                    </div>
+                    <div data-type="vid" id="attach_vid" title="Attach video" style="cursor: pointer;font-size: 20px;margin-left: 10px;">
+                        <i class="fa fa-play-circle" aria-hidden="true"></i>
+                    </div>
+                   
+                    <input style="display: none;"  type="file" accept="video/*,image/*" name="media" id="media-input">
+                </div>
+                
+                        </div>
+                        <div class="dropdown">
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">
+                            Close
+                        </button>
+                        <button type="button" class="btn btn-primary" id="saveButton">
+                            Post
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Preloader Start -->
+    <div id="preloader">
+        <div class="loader3">
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+    <!-- Preloader End -->
+
+    <!-- start header -->
+    <div id="navbar">
+    </div>
+    <!-- main search area end -->
+
+    <!-- Ofcanvas-menu -->
+    <div class="ofcavas-menu">
+        <!--menu start-->
+        <ul>
+            <li class="nav-item">
+                <a href="#" class="nav-link"><span><img src="img/ofcavas-chat.png" alt=""> Chat</span> <i
+                        class="fas fa-chevron-right"></i></a>
+                <a href="#" class="nav-link"><span><img src="img/setting-icon.png" alt=""> Settings</span> <i
+                        class="fas fa-chevron-right"></i></a>
+                <a href="#" class="nav-link"><span><img src="img/contact-icon.png" alt=""> Contact</span> <i
+                        class="fas fa-chevron-right"></i></a>
+                <a href="#" class="nav-link"><span><img src="img/event-icon.png" alt=""> Events</span> <i
+                        class="fas fa-chevron-right"></i></a>
+                <a href="#" class="nav-link"><span><img src="img/resource-icon.png" alt=""> Resources</span> <i
+                        class="fas fa-chevron-right"></i></a>
+                <a href="#" class="nav-link logout-center"><span class="logout-btn">Logout</span></a>
+            </li>
+        </ul>
+    </div>
+    <!-- Ofcanvas-menu END-->
+
+    <!-- profile page area start -->
+    <div class="main-profile-wrapper">
+
+        <!-- left sidebar area start -->
+        <div class="left-sidebar">
+            <div class="left-sidebar-scroll">
+                <a href="settings.html" class="man-content mt_20 d-flex align-items-center">
+                    <img src="public/img/setting-icon.png" id="leftPfp" alt="">
+                    <h3 id="leftName"></h3>
+                </a>
+                <a href="events.html" class="man-content mt_20 d-flex align-items-center">
+                    <img class="user-one" src="public/img/left-event-icon.png" alt="">
+                    <h3>Events</h3>
+                </a>
+                <a href="resources.html" class="man-content mt_20 d-flex align-items-center">
+                    <img class="user-one" src="public/img/left-resource-icon.png" alt="">
+                    <h3>Resources</h3>
+                </a>
+                <a href="explore.html" class="man-content mt_20 d-flex align-items-center">
+                    <img class="user-one" src="public/img/left-explore-icon.png" alt="">
+                    <h3>Explore</h3>
+                </a>
+
+            </div>
+        </div>
+
+        <!-- left sidebar area end -->
+
+        <div class="profile-wrapper">
+            <div class="container-fluid">
+                <button onclick="window.history.back()" class="btn btn-small btn-white">
+                    <i class="fa fa-arrow-left fa-2x" aria-hidden="true"></i>
+                </button>
+                <div class="mt-3" id="list_div"></div>
+                <div id="allReplies"></div>
+
+                <div class="mt-3" id="rep_div"></div>
+                <div id="allReplies2"></div>
+            </div>
+        </div>
+
+        <div class="right-sidebar">
+            <h3 class="head-text-second mt_25">Sponsored</h3>
+            <img class="img-fluid mt_25" src="public/img/ad.png" alt="">
+            <hr class="line-text line-text-two">
+            <!-- <h3 class="head-text-second">Contacts</h3>
+            <div id="friends-card">
+                
+            </div>  -->
+            <h3 class="head-text-second">Suggestions</h3>
+            <div id="suggestions">
+            </div>
+        </div>
+
+    </div>
+
+    <div class="tab-wrapper">
+        <a class="tab-link" href="suggestions.html"
+          ><img src="/public/img/imoji-01.png" style="height:25px;width:25px" alt=""
+        /></a>
+        <a class="tab-link" href="explore.html"
+          ><img src="/public/img/imoji-03.png" style="height:25px;width:25px" alt=""
+        /></a>
+        <a class="tab-link" href="calendar.html"
+          ><img src="/public/img/imoji-04.png" style="height:25px;width:25px" alt=""
+        /></a>
+        <a class="tab-link" href="resources.html"
+          ><img src="/public/img/imoji-05.png" style="height:25px;width:25px" alt=""
+        /></a>
+        <a class="tab-link" href="contact.html"
+          ><img src="/public/img/imoji-06.png" style="height:25px;width:25px" alt=""
+        /></a>
+      </div>
+
+    <a class="chat-bot"><img src="public/img/Logo.png" style="width:30px;height:30px;" alt=""></a>
+
+    <!-- all js here -->
+    <script src="https://www.gstatic.com/firebasejs/7.16.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.16.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.16.0/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.16.0/firebase-storage.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.16.0/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.16.0/firebase-analytics.js"></script>
+    <script type="text/javascript" src="public/js/projectKey.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.11/lodash.js"></script>
+    <script src="public/js/noframework.waypoints.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="public/js/tweetreply.js"></script>
+    <script src="public/js/popper-1.14.7.min.js"></script>
+    <script src="public/js/bootstrap-4.3.1.min.js"></script>
+    <script src="public/js/jquery-3.4.1.min.js"></script>
+    <script src="public/js/plugins.js"></script>
+    <script src="public/js/main.js"></script>
+    <script src="public/js/navbar.js"></script>
+    <script src="public/js/search.js"></script>
+</body>
+
+</html>

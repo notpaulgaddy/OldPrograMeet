@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>PrograMeet</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="public/css/home.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+    <link href="public/img/Logo.png" type="image/png" rel="icon">
+    <link href="public/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="public/css/fontawesome.min.css" rel="stylesheet" type="text/css" />
+    <link href="public/css/helper.css" rel="stylesheet" type="text/css" />
+    <link href="public/css/style.css" rel="stylesheet" type="text/css" />
+    <link href="public/css/responsive.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" />
+</head>
+
+<body>
+
+    <div id="navbar">
+    </div>
+
+    <div class="chat-bot" data-toggle="modal" data-target="#myModal"><img src="public/img/Logo.png" id="tweet"
+            style="width:30px;height:30px;" alt=""></div>
+
+    <div>
+        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel" style="text-align: center">
+                            New post
+                        </h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="form-group">
+                            <label for="message-text" class="col-form-label">Post:</label>
+                            <textarea class="form-control" id="postText"></textarea>
+                            <div style="height: 2px;display: none;" class="progress">
+                                <div id="progressbar" class="progress-bar" role="progressbar" style="width: 0%"
+                                    aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <div class="mt-2" style="text-align: center;" id="preview-media">
+
+                            </div>
+
+                            <div class="d-flex align-items-center justify-content-center mt-3">
+                                <div data-type="image" id="attach_img" title="Attach image"
+                                    style="cursor: pointer;font-size: 20px;">
+                                    <i class="fa fa-image " aria-hidden="true"></i>
+                                </div>
+                                <div data-type="vid" id="attach_vid" title="Attach video"
+                                    style="cursor: pointer;font-size: 20px;margin-left: 10px;">
+                                    <i class="fa fa-play-circle" aria-hidden="true"></i>
+                                </div>
+
+                                <input style="display: none;" type="file" accept="video/*,image/*" name="media"
+                                    id="media-input">
+                            </div>
+                        </div>
+                        <div class="dropdown">
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">
+                            Close
+                        </button>
+                        <button type="button" class="btn btn-primary" id="saveButton">
+                            Post
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="main-profile-wrapper">
+
+        <!-- left sidebar area start -->
+        <div class="left-sidebar">
+            <div class="left-sidebar-scroll">
+                <a href="settings.html" class="man-content mt_20 d-flex align-items-center">
+                    <img src="public/img/setting-icon.png" id="leftPfp" alt="">
+                    <h3 id="leftName"></h3>
+                </a>
+                <a href="events.html" class="man-content mt_20 d-flex align-items-center">
+                    <img class="user-one" src="public/img/left-event-icon.png" alt="">
+                    <h3>Events</h3>
+                </a>
+                <a href="resources.html" class="man-content mt_20 d-flex align-items-center">
+                    <img class="user-one" src="public/img/left-resource-icon.png" alt="">
+                    <h3>Resources</h3>
+                </a>
+                <a href="explore.html" class="man-content mt_20 d-flex align-items-center">
+                    <img class="user-one" src="public/img/left-explore-icon.png" alt="">
+                    <h3>Explore</h3>
+                </a>
+
+            </div>
+        </div>
+        <!-- left sidebar area end -->
+
+        <div class="profile-wrapper">
+            <div class="container-fluid">
+                <!-- <div class="profile-box mt_25">
+                <div class="profile-first-content d-flex align-items-start  man-content mt_20 d-flex align-items-center">
+                    <img id="postPfp" src="public/img/setting-icon.png" alt="">
+                    <textarea id="postText" placeholder="What’s on your mind Andrew?"></textarea>
+                </div>
+                <hr class="hr-three">
+                <div class="d-flex align-items-center justify-content-between">
+                    <div class="default-none profile-second-content d-flex align-items-center">
+                        <img src="img/imoji-one.png" alt="">
+                        <h3>Feeling/Activity</h3>
+                    </div>
+                    <div class="profile-second-content custom-center position-relative d-flex align-items-center">
+                        <input class="file-info" type="file">
+                        <img src="img/imoji-two.png" alt="">
+                        <h3>Photo/Video</h3>
+                    </div>
+                </div>
+            </div> -->
+              <div><h4>Notifications</h4></div>
+                <div class="profile-box-two" id="notifications">
+
+                </div>
+                <!-- <div class="profile-box profile-box-two">
+                <div class="d-flex align-items-center justify-content-between">
+                    <div class="profile-second-content position-relative flex-direction d-flex align-items-start">
+                        <a class="three-dot dropdown-toggle" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#"><img src="img/three-dot.png" alt=""></a>
+                        <img src="img/man-03.png" alt="">
+                        <div>
+                            <h3>Cordae  11-13-21 11:14</h3>
+                            <h3 class="mt_10">New album out! </h3>
+                            <img src="img/album-img.png" class="album-img img-fluid mt_10" alt="">
+                            <div class="d-flex align-items-center">
+                                <a href="#" class="like-box mt_10 like-box-one"><img src="img/imoji-three.png" alt="">31</a>
+                                <a href="#" class="like-box mt_10"><img src="img/imoji-four.png" alt="">5</a>
+                            </div>
+                            
+                        </div>
+                        <div class="dropdown-menu dropdown-menu-right" >
+                              <a style="color: #5B93FF;background: rgba(91, 147, 255, 0.19);" class="dropdown-item" href="#">Edit</a>
+                              <a style="background: rgba(231, 29, 54, 0.15);color: #E71D36;" class="dropdown-item mt_5" href="#">Delete</a>
+                              <a style="background: rgba(91, 147, 255, 0.15);color: #5B93FF;" class="dropdown-item mt_5" href="#">Activate</a>
+                          </div>
+                    </div>
+                </div>
+            </div> -->
+            </div>
+        </div>
+
+        <div class="right-sidebar">
+            <h3 class="head-text-second mt_25">Sponsored</h3>
+            <img class="img-fluid mt_25" src="public/img/ad.png" alt="">
+            <hr class="line-text line-text-two">
+            <!-- <h3 class="head-text-second">Contacts</h3>
+        <div id="friends-card">
+            
+        </div>  -->
+            <h3 class="head-text-second">Suggestions</h3>
+            <div id="theSuggestions">
+            </div>
+        </div>
+
+    </div>
+
+    <!-- profile page area end -->
+
+
+
+    <!-- custom contact area start -->
+    <div class="contact-wrapper">
+        <div class="contact-sub" id="tab_6">
+            <h2 class="contact-text">Contacts</h2>
+            <div class="defaul-sub-text mt_50 d-flex align-items-center justify-content-start">
+                <img src="public/img/setting-icon.png" alt="">
+                <h3>Jack Harlow</h3>
+            </div>
+            <div class="defaul-sub-text mt_10 d-flex align-items-center justify-content-start">
+                <img src="public/img/setting-icon.png" alt="">
+                <h3>Bryson Tiller</h3>
+            </div>
+            <div class="defaul-sub-text mt_10 d-flex align-items-center justify-content-start">
+                <img src="public/img/setting-icon.png" alt="">
+                <h3>Cordae</h3>
+            </div>
+            <div class="defaul-sub-text mt_10 d-flex align-items-center justify-content-start">
+                <img src="public/img/setting-icon.png" alt="">
+                <h3>Naomi Osaka</h3>
+            </div>
+            <div class="defaul-sub-text mt_10 d-flex align-items-center justify-content-start">
+                <img src="public/img/setting-icon.png" alt="">
+                <h3>Cordae</h3>
+            </div>
+        </div>
+
+        <!-- suggested area start -->
+        <div class="contact-sub" id="tab_5">
+            <h2 class="contact-text">Suggested</h2>
+            <div class="defaul-sub-text mt_50 d-flex align-items-center justify-content-start">
+                <img src="public/img/setting-icon.png" alt="">
+                <h3>Jack Harlow</h3>
+            </div>
+            <div class="defaul-sub-text mt_10 d-flex align-items-center justify-content-start">
+                <img src="public/img/setting-icon.png" alt="">
+                <h3>Bryson Tiller</h3>
+            </div>
+            <div class="defaul-sub-text mt_10 d-flex align-items-center justify-content-start">
+                <img src="public/img/setting-icon.png" alt="">
+                <h3>Cordae</h3>
+            </div>
+            <div class="defaul-sub-text mt_10 d-flex align-items-center justify-content-start">
+                <img src="public/img/setting-icon.png" alt="">
+                <h3>Naomi Osaka</h3>
+            </div>
+            <div class="defaul-sub-text mt_10 d-flex align-items-center justify-content-start">
+                <img src="public/img/setting-icon.png" alt="">
+                <h3>Cordae</h3>
+            </div>
+        </div>
+        <!-- suggested area end -->
+
+        <!-- username area start -->
+        <div class="contact-sub" id="tab_4">
+            <div class="first-user-box d-flex align-items-center justify-content-between">
+                <div class="mini-username d-flex align-items-center">
+                    <img src="public/img/mini-username.png" alt="">
+                    <h4>Username</h4>
+                </div>
+                <a class="alerm-content position-relative" href="#">
+                    <img src="public/img/alerm-icon.png" alt="">
+                    <span>10</span>
+                </a>
+            </div>
+            <div class="custom-search">
+                <input type="text" placeholder="Search for a user">
+            </div>
+            <div class="naomi-main-content">
+                <div class="naomi-content d-flex align-items-center">
+                    <img src="public/img/naomi-man.png" alt="">
+                    <div>
+                        <h3>Naomi</h3>
+                        <h3 class="mt_10">What’s your favorite song?</h3>
+                    </div>
+                </div>
+                <div class="naomi-content mt_20 d-flex align-items-center">
+                    <img src="public/img/naomi-man.png" alt="">
+                    <div>
+                        <h3>Naomi</h3>
+                        <h3 class="mt_10">What’s your favorite song?</h3>
+                    </div>
+                </div>
+                <div class="naomi-content mt_20 d-flex align-items-center">
+                    <img src="public/img/naomi-man.png" alt="">
+                    <div>
+                        <h3>Naomi</h3>
+                        <h3 class="mt_10">What’s your favorite song?</h3>
+                    </div>
+                </div>
+                <div class="naomi-content mt_20 d-flex align-items-center">
+                    <img src="public/img/naomi-man.png" alt="">
+                    <div>
+                        <h3>Naomi</h3>
+                        <h3 class="mt_10">What’s your favorite song?</h3>
+                    </div>
+                </div>
+                <div class="naomi-content mt_20 d-flex align-items-center">
+                    <img src="public/img/naomi-man.png" alt="">
+                    <div>
+                        <h3>Naomi</h3>
+                        <h3 class="mt_10">What’s your favorite song?</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="contact-sub" id="tab_3">
+            <div class="first-user-box d-flex align-items-center justify-content-between">
+                <div class="mini-username d-flex align-items-center">
+                    <img src="public/img/mini-username.png" alt="">
+                    <h4>Username</h4>
+                </div>
+                <a class="alerm-content position-relative" href="#">
+                    <img src="public/img/alerm-icon.png" alt="">
+                    <span>10</span>
+                </a>
+            </div>
+            <div class="notification-box">
+                <h3>Notifications</h3>
+                <div class="friend-message-box">
+                    <p>New friend request</p>
+                    <div class="mt_10">
+                        <img class="message-man" src="public/img/man-04.png" alt="">
+                        <a class="accep-deny-btn" href="#">Accept<img src="public/img/accept-icon.png" alt=""></a>
+                        <a class="accep-deny-btn red-color" href="#">Deny<img src="public/img/close-icon.png"
+                                alt=""></a>
+                    </div>
+                </div>
+                <div class="friend-message-box new-message-box">
+                    <p>New message</p>
+                    <div class="mt_10 d-flex align-items-center">
+                        <img src="public/img/man-04.png" alt="">
+                        <p class="what-left">What’s your favorite song?</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="contact-sub" id="tab_2">
+            <div class="name-content-box d-flex align-items-center">
+                <img src="public/img/left-arrow-icon.png" alt="">
+                <img class="mini-username" src="public/img/mini-username.png" alt="">
+                <div>
+                    <h4>Name</h4>
+                    <h5>@Name</h5>
+                </div>
+            </div>
+            <div class="messanger-box">
+                <div>
+                    <div class="d-flex align-items-end">
+                        <img src="public/img/mini-username.png" alt="">
+                        <p>Welcome to the lifeline chatbot.<br> I provide informatio related to<br>suicide and self
+                            harm. If you are<br> needing help, or a worried about<br> someone you care about, choose<br>
+                            one of the topics below.</p>
+                    </div>
+                    <span>Friday 11:48</span>
+                </div>
+                <div class="messanger-me text-right">
+                    <p>Get help now</p>
+                    <span>Friday 12:32<i class="fal fa-check"></i></span>
+                </div>
+                <div>
+                    <div class="d-flex align-items-end">
+                        <img src="public/img/mini-username.png" alt="">
+                        <p>If you need help:<br> Call us on 13 11 14 (14/7)<br>Chat to us online (7pm to midnight<br>
+                            AEST)<br> Text us on 0477 13 11 14( 6 pm to 10pm AEST<br> someone you care about, choose<br>
+                            one of the topics below.</p>
+                    </div>
+                    <span>Friday 11:48</span>
+                </div>
+                <div class="bottom-messanger d-flex align-items-center">
+                    <a href="#"><i class="far fa-image"></i></a>
+                    <a href="#"><i class="far fa-images"></i></a>
+                    <textarea class="message-text" placeholder="Start a message"></textarea>
+                    <button class="submit-plane" type="submit"><i class="fab fa-telegram-plane"></i></button>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+    <div class="tab-wrapper">
+        <a class="tab-link" href="#tab_1"><img src="img/imoji-01.png" alt=""></a>
+        <a class="tab-link" href="#tab_2"><img src="img/imoji-02.png" alt=""></a>
+        <a class="tab-link" href="#tab_3"><img src="img/imoji-03.png" alt=""></a>
+        <a class="tab-link" href="#tab_4"><img src="img/imoji-04.png" alt=""></a>
+        <a class="tab-link" href="#tab_5"><img src="img/imoji-05.png" alt=""></a>
+        <a class="tab-link" href="#tab_6"><img src="img/imoji-06.png" alt=""></a>
+    </div>
+
+
+    <script src="/public/js/jquery.min.js"></script>
+    <script src="/public/js/bootstrap.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.16.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.16.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.16.0/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.16.0/firebase-storage.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.16.0/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.16.0/firebase-analytics.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.16.0/firebase-messaging.js"></script>
+    <script type="text/javascript" src="/public/js/projectKey.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.11/lodash.js"></script>
+    <script src="public/js/noframework.waypoints.min.js"></script>
+    <!-- <script src="/public/js/navbar.js"></script>
+    <script src="/public/js/notifSpan.js"></script> -->
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="public/js/home.js"></script>
+    <script src="public/js/popper-1.14.7.min.js"></script>
+    <script src="public/js/bootstrap-4.3.1.min.js"></script>
+    <script src="public/js/navbar.js"></script>
+    <script src="public/js/search.js"></script>
+</body>
+
+</html>
