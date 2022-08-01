@@ -1,0 +1,98 @@
+.section_padd{
+	padding: 80px 0;
+}
+
+.mr_5{
+	margin-right: 5px;
+}
+
+.mb_10{
+	margin-bottom: 10px;
+}
+h5{
+	font-size: 15px;
+	margin-left: auto;
+    margin-right: auto;
+}
+.mt_10{
+	margin-top: 10px !important;
+	font-weight:normal;
+}
+.postText{
+	font-family: 'Roboto';
+font-style: normal;
+font-weight:100;
+font-size: 16px;
+line-height: 24px;
+}
+.mr_10{
+	margin-right: 10px;
+}
+.mr_15{
+	margin-right: 15px;
+}
+.mb_15{
+	margin-bottom: 15px;
+}
+.mt_15{
+	margin-top: 15px;
+}
+.mb_20{
+	margin-bottom: 20px;
+}
+.mt_20{
+	margin-top: 20px;
+}
+.mb_25{
+	margin-bottom: 25px;
+}
+.mt_25 {
+    margin-top: 15px;
+}
+.mb_30{
+	margin-bottom: 30px;
+}
+.mt_30{
+	margin-top: 30px;
+}
+.mb_35{
+	margin-bottom: 35px;
+}
+.mt_40{
+	margin-top: 40px;
+}
+.mb_40{
+	margin-bottom: 40px;
+}
+.mt_50 {
+	margin-top: 50px !important;
+}
+.mt_60{
+	margin-top: 60px;
+}
+.mb_60{
+	margin-bottom: 60px;
+}
+
+.mr_15{
+	margin-right: 15px;
+}
+.ml_15{
+	margin-left: 15px;
+}
+
+.button {
+    padding: 10px 35px;
+    border: 1px solid #FFEF29;
+    display: inline-block;
+    border-radius: 10px;
+    color: #FFEF29;
+    font-size: 14px;
+	transition: .3s;
+}
+
+.button:hover {
+	background: #FFB129;
+	border: 1px solid transparent;
+	color: #fff;
+}

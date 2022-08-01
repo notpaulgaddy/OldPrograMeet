@@ -1,0 +1,892 @@
+.text-info {
+  /*color: color: #000000;*/
+  color: #000000 !important;
+}
+
+body {
+  margin: 0;
+  font-family: Montserrat, sans-serif;
+  font-size: 1.01rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #000000;
+  text-align: left;
+  background-color: #fff;
+}
+
+
+
+.clean-block.clean-services .card h4 {
+  font-weight: 600;
+  font-size: 1.2em;
+  margin-bottom: .8em;
+}
+.clean-block .block-heading {
+  padding-top: 25px;
+}
+
+@media (max-width: 2880px),
+screen and (max-height: 1000px) {
+
+
+  .row {
+    margin-top: 1px;
+  }
+
+
+
+  input {
+    width: 319px;
+    padding-left: 70px;
+    margin-left: 165px;
+  }
+
+  #empresa-1 {
+    padding: 20px;
+    margin: 1px;
+    background-color: rgb(228, 240, 255);
+    height: 335.875px;
+  }
+
+  #empresa {
+    padding: 20px;
+    margin: 1px;
+    background-color: white;
+    padding-top: 101px;
+    height: 335.875px;
+  }
+
+  #network {
+    width: 150px;
+    margin-left: 119px;
+  }
+
+  #attendance {
+    margin-left: 55px;
+    margin-top: 110px;
+    width: 150px;
+  }
+
+  .col-sm-6.col-md-7.col-lg-7 {
+    margin-top: 90px;
+  }
+
+  #handshake {
+    margin-left: 126px;
+    margin-top: 49px;
+    width: 150px;
+  }
+
+  .col-sm-6.col-md-7.col-lg-7 {
+    margin-left: -4px;
+    margin-top: 90px;
+  }
+
+  #empresa-2 {
+    padding: 20px;
+    margin: 1px;
+    background-color: rgb(228, 240, 255);
+    height: 335.875px;
+    margin-left: 6px;
+    margin-top: 4px;
+    padding-top: 105px;
+  }
+
+  .col {
+    padding: 20px 12px;
+    padding-left: 233px;
+    padding-top: 46px;
+    padding-bottom: 46px;
+  }
+
+  .page-footer {
+    margin: 0;
+  }
+
+  .img-fluid {
+    width: 25px;
+    height: 25px;
+  }
+
+  .form-control {
+    padding-left: -166px;
+    margin-left: -4px;
+  }
+
+  #attendance-2 {
+    margin-left: 55px;
+    margin-top: 33px;
+    width: 300px;
+    height: 150px;
+  }
+
+}
+
+@media (max-width: 1920px) {
+  .row {
+    margin-top: 1px;
+  }
+
+  input {
+    width: 619px;
+    padding-left: 70px;
+    margin-left: 165px;
+  }
+
+  #empresa-1 {
+    padding: 20px;
+    margin: 1px;
+    background-color: rgb(228, 240, 255);
+    height: 335.875px;
+  }
+
+  #empresa {
+    padding: 20px;
+    margin: 1px;
+    background-color: white;
+    padding-top: 101px;
+    height: 335.875px;
+  }
+
+  #network {
+    width: 150px;
+    margin-left: 119px;
+  }
+
+  #attendance {
+    margin-left: 55px;
+    margin-top: 110px;
+    width: 150px;
+  }
+
+  .col-sm-6.col-md-7.col-lg-7 {
+    margin-top: 90px;
+  }
+
+  #handshake {
+    margin-left: 126px;
+    margin-top: 49px;
+    width: 150px;
+  }
+
+  .col-sm-6.col-md-7.col-lg-7 {
+    margin-left: -4px;
+    margin-top: 90px;
+  }
+
+  #empresa-2 {
+    padding: 20px;
+    margin: 1px;
+    background-color: rgb(228, 240, 255);
+    height: 335.875px;
+    margin-left: 6px;
+    margin-top: 4px;
+    padding-top: 105px;
+  }
+
+  .col {
+    padding: 20px 12px;
+    padding-left: 233px;
+    padding-top: 46px;
+    padding-bottom: 46px;
+  }
+
+  .page-footer {
+    margin: 0;
+  }
+
+  .img-fluid {
+    width: 25px;
+    height: 25px;
+  }
+
+  .form-control {
+    padding-left: -166px;
+    margin-left: -4px;
+  }
+
+  #attendance-2 {
+    margin-left: 55px;
+    margin-top: 33px;
+    width: 300px;
+    height: 150px;
+  }
+
+}
+
+@media (max-width: 1679px) {
+
+  #logo {
+    width: 170px;
+    height: 170px;
+  }
+
+  .row {
+    margin-top: -55px;
+    text-align: center;
+  }
+
+  #empresa-1 {
+    padding: 20px;
+    margin: 1px;
+    background-color: rgb(228, 240, 255);
+    height: 335.875px;
+  }
+
+  #empresa {
+    padding: 20px;
+    margin: 1px;
+    background-color: white;
+    padding-top: 101px;
+    height: 335.875px;
+  }
+
+  #network {
+    width: 150px;
+    margin-left: 119px;
+  }
+
+  #attendance {
+    margin-left: 55px;
+    margin-top: 110px;
+    width: 150px;
+  }
+
+  #attendance-1 {
+    margin-left: 55px;
+    margin-top: 110px;
+    width: 150px;
+  }
+
+  .col-sm-6.col-md-7.col-lg-7 {
+    margin-top: 90px;
+  }
+
+  #handshake {
+    margin-left: 126px;
+    margin-top: 49px;
+    width: 150px;
+  }
+
+  .col-sm-6.col-md-7.col-lg-7 {
+    margin-left: -4px;
+    margin-top: 90px;
+  }
+
+  #empresa-2 {
+    padding: 20px;
+    margin: 1px;
+    background-color: rgb(228, 240, 255);
+    height: 335.875px;
+    margin-left: 6px;
+    margin-top: 4px;
+    padding-top: 105px;
+  }
+
+  .col {
+    padding: 20px 12px;
+    padding-left: 233px;
+    padding-top: 46px;
+    padding-bottom: 46px;
+  }
+
+  .page-footer {
+    margin: 0;
+    position: relative;
+  }
+
+  .img-fluid {
+    width: 25px;
+    height: 25px;
+  }
+
+  .form-control {
+    padding-left: -166px;
+    margin-left: -4px;
+  }
+
+  #attendance-2 {
+    margin-left: 55px;
+    margin-top: 33px;
+    width: 300px;
+    height: 150px;
+  }
+
+}
+
+@media (max-width: 1600px) {
+  .row {
+    margin-top: 1px;
+  }
+
+  input {
+    width: 319px;
+    padding-left: 70px;
+    margin-left: 165px;
+  }
+
+
+  #empresa-1 {
+    padding: 20px;
+    margin: 1px;
+    background-color: rgb(228, 240, 255);
+    height: 335.875px;
+  }
+
+  #empresa {
+    padding: 20px;
+    margin: 1px;
+    background-color: white;
+    padding-top: 101px;
+    height: 335.875px;
+  }
+
+  #network {
+    width: 150px;
+    margin-left: 119px;
+  }
+
+  #attendance {
+    margin-left: 55px;
+    margin-top: 110px;
+    width: 150px;
+  }
+
+  .col-sm-6.col-md-7.col-lg-7 {
+    margin-top: 90px;
+  }
+
+  #handshake {
+    margin-left: 126px;
+    margin-top: 49px;
+    width: 150px;
+  }
+
+  .col-sm-6.col-md-7.col-lg-7 {
+    margin-left: -4px;
+    margin-top: 90px;
+  }
+
+  #empresa-2 {
+    padding: 20px;
+    margin: 1px;
+    background-color: rgb(228, 240, 255);
+    height: 335.875px;
+    margin-left: 6px;
+    margin-top: 4px;
+    padding-top: 105px;
+  }
+
+  .col {
+    padding: 20px 12px;
+    padding-left: 233px;
+    padding-top: 46px;
+    padding-bottom: 46px;
+  }
+
+
+  .page-footer {
+    margin: 0;
+  }
+
+  .img-fluid {
+    width: 25px;
+    height: 25px;
+  }
+
+  .form-control {
+    padding-left: -166px;
+    margin-left: -4px;
+  }
+
+  #attendance-2 {
+    margin-left: 55px;
+    margin-top: 33px;
+    width: 300px;
+    height: 150px;
+  }
+
+}
+
+@media (max-width:1440px) {
+
+
+  input {
+    width: 319px;
+    padding-left: 70px;
+    margin-left: 165px;
+  }
+
+
+  #empresa-1 {
+    padding: 20px;
+    margin: 1px;
+    background-color: rgb(228, 240, 255);
+    height: 335.875px;
+  }
+
+  #empresa {
+    padding: 20px;
+    margin: 1px;
+    background-color: white;
+    padding-top: 101px;
+    height: 335.875px;
+  }
+
+  #network {
+    width: 150px;
+    margin-left: 119px;
+  }
+
+  #attendance {
+    margin-left: 55px;
+    margin-top: 110px;
+    width: 150px;
+  }
+
+  .col-sm-6.col-md-7.col-lg-7 {
+    margin-top: 90px;
+  }
+
+  #handshake {
+    margin-left: 126px;
+    margin-top: 49px;
+    width: 150px;
+  }
+
+  .col-sm-6.col-md-7.col-lg-7 {
+    margin-left: -4px;
+    margin-top: 90px;
+  }
+
+  #empresa-2 {
+    padding: 20px;
+    margin: 1px;
+    background-color: rgb(228, 240, 255);
+    height: 335.875px;
+    margin-left: 6px;
+    margin-top: 4px;
+    padding-top: 105px;
+  }
+
+  .col {
+    padding: 20px 12px;
+    padding-left: 233px;
+    padding-top: 46px;
+    padding-bottom: 46px;
+  }
+  .page-footer {
+    margin: 0;
+  }
+
+  .img-fluid {
+    width: 25px;
+    height: 25px;
+  }
+
+  .form-control {
+    padding-left: -166px;
+    margin-left: -4px;
+  }
+
+  #attendance-2 {
+    margin-left: 55px;
+    margin-top: 33px;
+    width: 300px;
+    height: 150px;
+  }
+
+}
+
+@media (max-width: 1360px) {
+
+  input {
+    width: 319px;
+    padding-left: 70px;
+    margin-left: 165px;
+  }
+
+  #empresa-1 {
+    padding: 20px;
+    margin: 1px;
+    background-color: rgb(228, 240, 255);
+    height: 335.875px;
+  }
+
+  #empresa {
+    padding: 20px;
+    margin: 1px;
+    background-color: white;
+    padding-top: 101px;
+    height: 335.875px;
+  }
+
+  #network {
+    width: 150px;
+    margin-left: 119px;
+  }
+
+  #attendance {
+    margin-left: 55px;
+    margin-top: 110px;
+    width: 150px;
+  }
+
+  .col-sm-6.col-md-7.col-lg-7 {
+    margin-top: 90px;
+  }
+
+  #handshake {
+    margin-left: 126px;
+    margin-top: 49px;
+    width: 150px;
+  }
+
+  .col-sm-6.col-md-7.col-lg-7 {
+    margin-left: -4px;
+    margin-top: 50px;
+  }
+
+  #empresa-2 {
+    padding: 20px;
+    margin: 1px;
+    background-color: rgb(228, 240, 255);
+    height: 335.875px;
+    margin-left: 6px;
+    margin-top: 4px;
+    padding-top: 105px;
+  }
+
+  .col {
+    padding: 20px 12px;
+    padding-left: 233px;
+    padding-top: 46px;
+    padding-bottom: 46px;
+  }
+
+  .page-footer {
+    margin: 0;
+  }
+
+  .img-fluid {
+    width: 25px;
+    height: 25px;
+  }
+
+  .form-control {
+    padding-left: -166px;
+    margin-left: -4px;
+  }
+
+  #attendance-2 {
+    margin-left: 55px;
+    margin-top: 33px;
+    width: 300px;
+    height: 150px;
+  }
+
+}
+
+@media (max-width: 1280px) {
+  input .search {
+    width: 319px;
+    padding-left: 70px;
+    margin-left: 165px;
+  }
+
+  #empresa-1 {
+    padding: 20px;
+    margin: 1px;
+    background-color: rgb(228, 240, 255);
+    height: 335.875px;
+  }
+
+  #empresa {
+    padding: 20px;
+    margin: 1px;
+    background-color: white;
+    padding-top: 101px;
+    height: 335.875px;
+  }
+
+  #network {
+    width: 150px;
+    margin-left: 119px;
+  }
+
+  #attendance {
+    margin-left: 55px;
+    margin-top: 110px;
+    width: 150px;
+  }
+
+  .col-sm-6.col-md-7.col-lg-7 {
+    margin-top: 90px;
+  }
+
+  #handshake {
+    margin-left: 126px;
+    margin-top: 49px;
+    width: 150px;
+  }
+
+  .col-sm-6.col-md-7.col-lg-7 {
+    margin-left: -4px;
+    margin-top: 90px;
+  }
+
+  #empresa-2 {
+    padding: 20px;
+    margin: 1px;
+    background-color: rgb(228, 240, 255);
+    height: 335.875px;
+    margin-left: 6px;
+    margin-top: 4px;
+    padding-top: 105px;
+  }
+
+  .col {
+    padding: 20px 12px;
+    padding-left: 233px;
+    padding-top: 46px;
+    padding-bottom: 46px;
+  }
+
+  .page-footer {
+    margin: 0;
+  }
+
+  .img-fluid {
+    width: 25px;
+    height: 25px;
+  }
+
+  .form-control {
+    padding-left: -166px;
+    margin-left: -4px;
+  }
+
+  #attendance-2 {
+    margin-left: 55px;
+    margin-top: 33px;
+    width: 300px;
+    height: 150px;
+  }
+
+}
+
+@media (max-width: 1100px) {
+  input .search {
+    width: 319px;
+    padding-left: 70px;
+    margin-left: 165px;
+  }
+
+
+  #empresa-1 {
+    padding: 20px;
+    margin: 1px;
+    background-color: rgb(228, 240, 255);
+    height: 335.875px;
+  }
+
+  #empresa {
+    padding: 20px;
+    margin: 1px;
+    background-color: white;
+    padding-top: 101px;
+    height: 335.875px;
+  }
+
+  #network {
+    width: 150px;
+    margin-left: 119px;
+  }
+
+  #attendance {
+    margin-left: 55px;
+    margin-top: 110px;
+    width: 150px;
+  }
+
+  .col-sm-6.col-md-7.col-lg-7 {
+    margin-top: 90px;
+  }
+
+  #handshake {
+    margin-left: 126px;
+    margin-top: 49px;
+    width: 150px;
+  }
+
+  .col-sm-6.col-md-7.col-lg-7 {
+    margin-left: -4px;
+    margin-top: 90px;
+  }
+
+  #empresa-2 {
+    padding: 20px;
+    margin: 1px;
+    background-color: rgb(228, 240, 255);
+    height: 335.875px;
+    margin-left: 6px;
+    margin-top: 4px;
+    padding-top: 105px;
+  }
+
+  .col {
+    padding: 20px 12px;
+    padding-left: 233px;
+    padding-top: 46px;
+    padding-bottom: 46px;
+  }
+
+  .page-footer {
+    margin: 0;
+  }
+
+  .img-fluid {
+    width: 25px;
+    height: 25px;
+  }
+
+  .form-control {
+    padding-left: -166px;
+    margin-left: -4px;
+  }
+
+  #attendance-2 {
+    margin-left: 55px;
+    margin-top: 33px;
+    width: 300px;
+    height: 150px;
+  }
+
+}
+#notification2 {
+  background-color: red;
+  border: 1px solid red;
+  border-radius: 50%;
+  position: relative;
+  margin-top: -10%;
+  font-size: 12px;
+  width: 20px;
+  height: 18px;
+  text-align: center;
+  color: white;
+  font-weight: bold;
+  margin-left: -12%;
+}
+
+#chatIcon{
+  display: flex;
+  margin-top: 1px;
+}
+
+.btn.btn-primary {
+  margin-left: .5rem;
+  margin-top: .2rem;
+  width: 84.09px;
+
+}
+
+@media (max-width: 767px) {
+  .btn.btn-primary {
+      margin-left: 0rem;
+      margin-top: .3rem;
+      width: 84.09px;
+
+  }
+  
+  #notification2 {
+      background-color: red;
+      border: 1px solid red;
+      border-radius: 50%;
+      position: relative;
+      margin-top: -1%;
+      font-size: 12px;
+      width: 20px;
+      height: 18px;
+      text-align: center;
+      color: white;
+      font-weight: bold;
+      margin-left: -1%;
+  }
+}
+
+
+.filter {
+  text-align: center;
+  font-size: 18px;
+  text-transform: uppercase;
+  margin: 30px 0 25px;
+}
+
+.filter span {
+  display: inline-block;
+  margin: 10px 15px;
+  cursor: pointer;
+  padding: 5px 0;
+  position: relative;
+  color: #777;
+}
+
+.filter span:hover, .filter span.active {
+  color: #000;
+}
+
+.filter span:after {
+  content: ' ';
+  width: 0;
+  height: 2px;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  background: transparent;
+  -webkit-transition: all .6s ease;
+  transition: all .6s ease;
+}
+
+.filter span.active:after {
+  width: 100%;
+  left: 0;
+  background: #000;
+}
+
+.load-more{
+text-align: center;
+}
+
+#blurb{
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+@media (min-width: 1540px){
+.container, .container-lg, .container-md, .container-sm, .container-xl {
+    max-width: 1500px;
+  }
+
+}
+
+p{
+  margin-bottom: -2rem;
+}
+
+.grid-item{
+  min-width: 280px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

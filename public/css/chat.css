@@ -1,0 +1,166 @@
+a {
+  color: #9ca1a3;
+}
+input:focus {
+  box-shadow: none !important;
+}
+.side-top-nav {
+  position: relative;
+  background-color: #f7f7f7;
+  height: auto;
+}
+.search-input {
+  border-color: #f7f7f7;
+  border-radius: none !important;
+}
+.bell-icon {
+  color: #9ca1a3;
+  font-size: 20px;
+  cursor: pointer;
+}
+.avatar-area {
+  position: relative;
+  display: flex;
+  background-color: #f7f7f7;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  height: 55px;
+}
+.profile-pic {
+  max-height: 45px;
+}
+#notification {
+  background-color: red;
+  border-radius: 50%;
+  height: 15px;
+  position: absolute;
+  top: 14px;
+  right: 7px;
+  width: 15px;
+  text-align: center;
+  color: white;
+  font-weight: bold;
+  font-size: 12px;
+}
+#notification > span {
+  font-size: 11px;
+}
+.friend-card {
+  height: 70px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  justify-content: flex-start;
+}
+.usr-name {
+  margin-left: 9px;
+}
+.chat-card {
+  position: relative;
+  height: 90vh;
+}
+.chat-nav {
+  display: flex;
+  background-color: #f7f7f7;
+  justify-content: space-between;
+  align-items: center;
+  height: 55px;
+}
+.user-details {
+  display: flex;
+  height: inherit;
+  align-items: center;
+}
+#friend-name {
+  margin-left: 10px;
+}
+.chat-input {
+  background-color: #f7f7f7;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+.chat-box {
+  height: 80vh;
+  overflow-y: scroll;
+}
+.other {
+  background-color: lightgreen;
+  border-radius: 1rem;
+  padding: 10px 15px;
+  margin-top: 10px;
+  max-width: 50%;
+  min-width: 20%;
+}
+.me {
+  display: flex;
+  justify-content: flex-end;
+}
+.me > div {
+  border-radius: 1rem;
+  background-color: #f7f7f7;
+  padding: 10px 15px;
+  max-width: 50%;
+
+  min-width: 20%;
+}
+
+.time {
+  font-size: 15px;
+  color: #9ca1a3;
+  margin-top: 3%;
+  margin-left: 1%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.card {
+  height: 94vh;
+}
+
+#messages {
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+#lstChat {
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+.dropdown-toggle::before {
+  display: none !important;
+}
+
+.dropdown-toggle::after {
+  display: none !important;
+}
+
+#emoji {
+  position: absolute;
+  top: -30vh;
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+#emoji #myTabContent {
+  height: 20vh;
+}
+
+#myTabContent a {
+  text-decoration: none;
+}
+.hide {
+  display: none;
+}
+.friend-pic {
+  height: 50px;
+  width: 50px;
+  margin-left: -10px;
+}
